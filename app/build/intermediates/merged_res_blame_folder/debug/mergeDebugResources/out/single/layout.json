@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_receipt_viewer.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_receipt_viewer.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/activity_register.xml",
+        "source": "com.budgetwise.app-main-57:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_dashboard.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_add_expense.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_add_expense.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/item_category.xml",
+        "source": "com.budgetwise.app-main-57:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_expenses.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_expenses.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_reports.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_reports.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/activity_login.xml",
+        "source": "com.budgetwise.app-main-57:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/item_category_report.xml",
+        "source": "com.budgetwise.app-main-57:/layout/item_category_report.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_categories.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_categories.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/item_expense.xml",
+        "source": "com.budgetwise.app-main-57:/layout/item_expense.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_goals.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_goals.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "com.budgetwise.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.budgetwise.app-mergeDebugResources-54:/layout/fragment_add_category.xml",
+        "source": "com.budgetwise.app-main-57:/layout/fragment_add_category.xml"
+    }
+]

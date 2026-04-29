@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.budgetwise.app.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_addExpense"
+            app:destination="@id/addExpenseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.budgetwise.app.ui.expenses.ExpensesFragment"
+        android:label="Expenses">
+        <action
+            android:id="@+id/action_expenses_to_addExpense"
+            app:destination="@id/addExpenseFragment" />
+        <action
+            android:id="@+id/action_expenses_to_receiptViewer"
+            app:destination="@id/receiptViewerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addExpenseFragment"
+        android:name="com.budgetwise.app.ui.expenses.AddExpenseFragment"
+        android:label="Add Expense">
+        <argument
+            android:name="expenseId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiptViewerFragment"
+        android:name="com.budgetwise.app.ui.expenses.ReceiptViewerFragment"
+        android:label="Receipt">
+        <argument
+            android:name="imagePath"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.budgetwise.app.ui.categories.CategoriesFragment"
+        android:label="Categories">
+        <action
+            android:id="@+id/action_categories_to_addCategory"
+            app:destination="@id/addCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCategoryFragment"
+        android:name="com.budgetwise.app.ui.categories.AddCategoryFragment"
+        android:label="Add Category">
+        <argument
+            android:name="categoryId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.budgetwise.app.ui.goals.GoalsFragment"
+        android:label="Goals" />
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.budgetwise.app.ui.reports.ReportsFragment"
+        android:label="Reports" />
+
+</navigation>

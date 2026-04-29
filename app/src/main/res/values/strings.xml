@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BudgetWise</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="expenses">Expenses</string>
+    <string name="categories">Categories</string>
+    <string name="goals">Goals</string>
+    <string name="reports">Reports</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="no_expenses">No expenses found for this period.</string>
+    <string name="no_categories">No categories yet. Tap + to add one.</string>
+</resources>

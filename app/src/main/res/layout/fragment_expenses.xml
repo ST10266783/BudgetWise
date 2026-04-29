@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Filter bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:elevation="4dp">
+
+            <!-- Period chips -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Month"
+                    android:layout_marginEnd="8dp"
+                    style="@style/Widget.MaterialComponents.Chip.Action" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Week"
+                    style="@style/Widget.MaterialComponents.Chip.Action" />
+
+            </LinearLayout>
+
+            <!-- Custom date range -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/btnFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="From: --"
+                    android:textSize="12sp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                <Button
+                    android:id="@+id/btnTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="To: --"
+                    android:textSize="12sp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            </LinearLayout>
+
+            <!-- Search bar -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search expenses..."
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="No expenses found for this period."
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

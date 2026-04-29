@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Spending Reports"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Period chips -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Month"
+                android:layout_marginEnd="8dp"
+                style="@style/Widget.MaterialComponents.Chip.Action" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Week"
+                style="@style/Widget.MaterialComponents.Chip.Action" />
+
+        </LinearLayout>
+
+        <!-- Date range buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="From: --"
+                android:textSize="12sp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <Button
+                android:id="@+id/btnTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To: --"
+                android:textSize="12sp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        </LinearLayout>
+
+        <!-- Pie Chart -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Category breakdown list -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Breakdown by Category"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategoryReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</ScrollView>
